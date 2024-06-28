@@ -4,15 +4,11 @@ Time to prove whether or not average joe can mod mcpi
 
 if you can read this, i have succeded in linking vs to github
 
-minecraft.h is meant for the compiler. I would recommend learning the syntax for the symbol definition files and reading them.
-
-## - TheBrokenRail
-
-### Ok, so how to run it
+## Ok, so how to run it
 
 (this will download all mods, compile them for your last run version of mcpi, and move all of them to the mods directory.)
 
-```sh
+```bash
 # remove any old version
 rm attempts-to-understand-mcpi -r -f
 
