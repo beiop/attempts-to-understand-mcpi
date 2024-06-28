@@ -14,11 +14,14 @@ if you can read this, i have succeded in linking vs to github
 
 ## Ok, so how to run it
 
-this will download all mods, compile them for your last run version of mcpi, and move all of them to the mods directory.
+this will download all mods, compile them for your last run version of mcpi, and move all of them to the mods directory. Probably needs re-run when mcpi updates.
 
-do note that this probably will not work untill you install all the prerequisits that I will not tell you about because I don't even know them myself.
+this also only supports being run on arm. I haven't figured out how to do anything else yet...
 
 ``` bash
+# install every dependency I can think of. I probably missed a few and have one unessisary one
+sudo apt install git make cmake gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf ninja-build
+
 # remove any old version
 rm attempts-to-understand-mcpi -r -f
 
@@ -32,3 +35,5 @@ chmod +x attempts-to-understand-mcpi/build.sh
 attempts-to-understand-mcpi/build.sh
 
 ```
+
+there's no spell check in this...
