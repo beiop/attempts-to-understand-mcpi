@@ -1,0 +1,3 @@
+/home/beiopi/Documents/attempts-to-understand-mcpi/edibleStoneSlab/build/CMakeFiles/edibleStoneSlab.dir
+/home/beiopi/Documents/attempts-to-understand-mcpi/edibleStoneSlab/build/CMakeFiles/edit_cache.dir
+/home/beiopi/Documents/attempts-to-understand-mcpi/edibleStoneSlab/build/CMakeFiles/rebuild_cache.dir
