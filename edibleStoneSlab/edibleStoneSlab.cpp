@@ -10,7 +10,7 @@ static Tile *edibleStoneSlab = nullptr;
 
 #define edibleStoneSlab_LEN 0.0F
 #define blockId 106
-#353
+//353
 
 // Description
 static std::string edibleStoneSlab_getDescriptionId(__attribute__((unused)) Tile *tile) {
@@ -102,7 +102,7 @@ static void edibleStoneSlab_updateShape(Tile *tile, LevelSource *level, int x, i
 // Eating
 static int edibleStoneSlab_use(__attribute__((unused)) Tile *tile, Level *level, int x, int y, int z, Player *player) {
     // Eat
-    player->foodData.eat(3);
+    player->foodData.eat(2);
     // Set the new tile
     int data = level->getData(x, y, z);
     if (data >= 5) {
@@ -205,12 +205,12 @@ static void Recipes_injection(Recipes *recipes) {
         .letter = 'e'
     };
     // Milk
-    Recipes_Type milk = {
+    Recipes_Type cobblestone = {
         .item = 0,
         .tile = 0,
         .instance = {
             .count = 1,
-            .id = 325,
+            .id = 4,
             .auxiliary = 1
         },
         .letter = 'm'
