@@ -6,13 +6,12 @@ if you can read this, i have succeded in linking vs to github
 
 ## What even
 
-`doubleStoneSlab` adds the block to the game and makes it craftable
-
-`edibleStoneSlab` adds the block to the game and makes it craftable
+* `doubleStoneSlab` & `edibleStoneSlab` adds the block to the game and makes it craftable. Neither work
+* [cuboid](<python scripts/cuboid.py>) [line](<python scripts/line.py>) take the position of the block below you, then after you press enter in the terminal, another posiiton of another block below you and make a ___ between them out of the first position's block type.
 
 > I realise this is kinda redundant, but also cool formatting!
 
-## Ok, so how to run it
+## Ok, so how to run it (mods, python is python)
 
 this will download all mods, compile them for your last run version of mcpi, and move all of them to the mods directory. Probably needs re-run when mcpi updates.
 

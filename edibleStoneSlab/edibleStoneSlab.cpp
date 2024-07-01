@@ -121,7 +121,7 @@ static void make_edibleStoneSlab() {
     edibleStoneSlab = new Tile;
     ALLOC_CHECK(edibleStoneSlab);
     int texture = 122;
-    edibleStoneSlab->constructor(blockId, texture, Material::dirt);
+    edibleStoneSlab->constructor(blockId, texture, Material::stone);
     edibleStoneSlab->texture = texture;
 
     // Set VTable
@@ -204,7 +204,7 @@ static void Recipes_injection(Recipes *recipes) {
         },
         .letter = 'e'
     };
-    // Milk
+    // Cobblestone
     Recipes_Type cobblestone = {
         .item = 0,
         .tile = 0,
@@ -213,7 +213,7 @@ static void Recipes_injection(Recipes *recipes) {
             .id = 4,
             .auxiliary = 1
         },
-        .letter = 'm'
+        .letter = 'c'
     };
     // edibleStoneSlab
     ItemInstance edibleStoneSlab_item = {
@@ -222,14 +222,15 @@ static void Recipes_injection(Recipes *recipes) {
         .auxiliary = 0
     };
     // Add
-    std::string line1 = "mmm";
+    std::string line1 = "ccc";
     std::string line2 = "ses";
     std::string line3 = "www";
-    std::vector<Recipes_Type> ingredients = {milk, sugar, wheat, eggs};
+    std::vector<Recipes_Type> ingredients = {cobblestone, sugar, wheat, eggs};
     recipes->addShapedRecipe_3(&edibleStoneSlab_item, &line1, &line2, &line3, &ingredients);
 }
 __attribute__((constructor)) static void init_edibleStoneSlab() {
     // Add edibleStoneSlab
+    fprintf(stderr, "%s", "edibleStoneSlab is running\n");
     misc_run_on_tiles_setup(Tile_initTiles_injection);
     misc_run_on_creative_inventory_setup(Inventory_setupDefault_FillingContainer_addItem_call_injection);
 }
