@@ -11,7 +11,7 @@ SSANDSTONE = 24,2
 OBSIDIAN = 15
 
 lHeight = 3
-length = 50
+length = 30
 lean = 10
 
 halfNote = .5
@@ -406,17 +406,13 @@ for k in range(2):
     Nnote = 1
     i = 0
     k = 9
+    for j in range(8):
+        pad(j+9,0,0)
     for j in range(4):
 
         #1
         tweeters((GLOWSTONE,15))
         if i == 16: i = 0
-        if k > 16: k = 9
-        pad(k,WOOL, 0)
-        if k == 9:
-            pad(16,WOOL,1)
-        else:
-            pad(k - 1,WOOL,5)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         lazer(note(Nnote),GLOWSTONE,5)
         WAIT(tinyNote)
@@ -425,18 +421,12 @@ for k in range(2):
 
         #2
         i += 1
-        k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 2)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
         
         #3
         drivers((GLOWSTONE,15))
         i += 1
-        k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 3)
         WAIT(tinyNote)
         drivers((SSANDSTONE))
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
@@ -444,9 +434,6 @@ for k in range(2):
 
         #4
         i += 1
-        k += 1
-        pad(k,WOOL,0)
-        pad(k - 1,WOOL, 4)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
 
@@ -456,12 +443,6 @@ for k in range(2):
         print(j)
         tweeters((GLOWSTONE,15))
         if i == 16: i = 0
-        if k > 16: k = 9
-        pad(k,WOOL, 0)
-        if k == 9:
-            pad(16,WOOL,1)
-        else:
-            pad(k - 1,WOOL,5)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         lazer(note(Nnote),WOOL,5)
         Nnote += 1
@@ -471,18 +452,12 @@ for k in range(2):
 
         #6
         i += 1
-        k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 2)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
         
         #7
         drivers((GLOWSTONE,15))
         i += 1
-        k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 3)
         lazer(note(Nnote),GLOWSTONE,5)
         WAIT(tinyNote)
         drivers((SSANDSTONE))
@@ -491,9 +466,6 @@ for k in range(2):
 
         #8
         i += 1
-        k += 1
-        pad(k,WOOL,0)
-        pad(k - 1,WOOL, 4)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         lazer(note(Nnote),WOOL,5)
         Nnote += 1
@@ -505,12 +477,6 @@ for k in range(2):
         print(j)
         tweeters((GLOWSTONE,15))
         if i == 16: i = 0
-        if k > 16: k = 9
-        pad(k,WOOL, 0)
-        if k == 9:
-            pad(16,WOOL,1)
-        else:
-            pad(k - 1,WOOL,5)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         lazer(note(Nnote),GLOWSTONE,5)
         WAIT(tinyNote)
@@ -519,18 +485,12 @@ for k in range(2):
 
         #10
         i += 1
-        k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 2)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
         
         #11
         drivers((GLOWSTONE,15))
         i += 1
-        k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 3)
         WAIT(tinyNote)
         drivers((SSANDSTONE))
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
@@ -539,8 +499,6 @@ for k in range(2):
         #12
         i += 1
         k += 1
-        pad(k,WOOL,0)
-        pad(k - 1,WOOL, 4)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         lazer(note(Nnote),WOOL,5)
         Nnote += 1
@@ -553,12 +511,6 @@ for k in range(2):
         print(j)
         tweeters((GLOWSTONE,15))
         if i == 16: i = 0
-        if k > 16: k = 9
-        pad(k,WOOL, 0)
-        if k == 9:
-            pad(16,WOOL,1)
-        else:
-            pad(k - 1,WOOL,5)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(tinyNote)
         tweeters((SSANDSTONE))
@@ -567,8 +519,6 @@ for k in range(2):
         #14
         i += 1
         k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 2)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
         
@@ -576,8 +526,6 @@ for k in range(2):
         drivers((GLOWSTONE,15))
         i += 1
         k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 3)
         WAIT(tinyNote)
         drivers((SSANDSTONE))
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
@@ -586,8 +534,6 @@ for k in range(2):
         #16
         i += 1
         k += 1
-        pad(k,WOOL,0)
-        pad(k - 1,WOOL, 4)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
 
@@ -598,12 +544,6 @@ for k in range(2):
 
         tweeters((GLOWSTONE,15))
         if i == 16: i = 0
-        if k > 16: k = 9
-        pad(k,WOOL, 0)
-        if k == 9:
-            pad(16,WOOL,1)
-        else:
-            pad(k - 1,WOOL,5)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         lazer(note(Nnote),WOOL,5)
         Nnote += 1
@@ -615,8 +555,6 @@ for k in range(2):
         #18
         i += 1
         k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 2)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
         
@@ -624,8 +562,6 @@ for k in range(2):
         drivers((GLOWSTONE,15))
         i += 1
         k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 3)
         WAIT(tinyNote)
         drivers((SSANDSTONE))
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
@@ -634,8 +570,6 @@ for k in range(2):
         #20
         i += 1
         k += 1
-        pad(k,WOOL,0)
-        pad(k - 1,WOOL, 4)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
 
@@ -645,12 +579,6 @@ for k in range(2):
         print(j)
         tweeters((GLOWSTONE,15))
         if i == 16: i = 0
-        if k > 16: k = 9
-        pad(k,WOOL, 0)
-        if k == 9:
-            pad(16,WOOL,1)
-        else:
-            pad(k - 1,WOOL,5)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         lazer(note(Nnote),WOOL,5)
         Nnote += 1
@@ -661,8 +589,6 @@ for k in range(2):
         #22
         i += 1
         k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 2)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
         
@@ -670,8 +596,6 @@ for k in range(2):
         drivers((GLOWSTONE,15))
         i += 1
         k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 3)
         lazer(note(Nnote),GLOWSTONE,5)
         WAIT(tinyNote)
         drivers((SSANDSTONE))
@@ -681,8 +605,6 @@ for k in range(2):
         #24
         i += 1
         k += 1
-        pad(k,WOOL,0)
-        pad(k - 1,WOOL, 4)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         lazer(note(Nnote),WOOL,5)
         Nnote += 1
@@ -694,12 +616,6 @@ for k in range(2):
         print(j)
         tweeters((GLOWSTONE,15))
         if i == 16: i = 0
-        if k > 16: k = 9
-        pad(k,WOOL, 0)
-        if k == 9:
-            pad(16,WOOL,1)
-        else:
-            pad(k - 1,WOOL,5)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         lazer(note(Nnote),GLOWSTONE,5)
         WAIT(tinyNote)
@@ -709,8 +625,6 @@ for k in range(2):
         #26
         i += 1
         k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 2)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
         
@@ -718,8 +632,6 @@ for k in range(2):
         drivers((GLOWSTONE,15))
         i += 1
         k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 3)
         lazer(note(Nnote),WOOL,5)
         Nnote += 1
         lazer(note(Nnote),GLOWSTONE,5)
@@ -731,8 +643,6 @@ for k in range(2):
         #28
         i += 1
         k += 1
-        pad(k,WOOL,0)
-        pad(k - 1,WOOL, 4)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
 
@@ -742,12 +652,6 @@ for k in range(2):
         print(j)
         tweeters((GLOWSTONE,15))
         if i == 16: i = 0
-        if k > 16: k = 9
-        pad(k,WOOL, 0)
-        if k == 9:
-            pad(16,WOOL,1)
-        else:
-            pad(k - 1,WOOL,5)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         lazer(note(Nnote),WOOL,5)
         Nnote += 1
@@ -759,8 +663,6 @@ for k in range(2):
         #30
         i += 1
         k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 2)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
         
@@ -768,8 +670,6 @@ for k in range(2):
         drivers((GLOWSTONE,15))
         i += 1
         k += 1
-        pad(k,WOOL, 0)
-        pad(k - 1,WOOL, 3)
         lazer(note(Nnote),WOOL,5)
         Nnote += 1
         lazer(note(Nnote),GLOWSTONE,5)
@@ -781,8 +681,6 @@ for k in range(2):
         #32
         i += 1
         k += 1
-        pad(k,WOOL,0)
-        pad(k - 1,WOOL, 4)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
         WAIT(halfNote)
 
@@ -797,6 +695,7 @@ for k in range(2):
     # =============================================
     # OYE VEY!!!!
     # =============================================
+    Nnote = 1
     for j in range(4):
 
         #1
@@ -809,6 +708,11 @@ for k in range(2):
         else:
             pad(k - 1,WOOL,5)
         mc.setBlocks(-20,10,-11,-20, 0, 10, GLOWSTONE, i)
+        for k in range(10):
+            lazer(k,0,0)
+        lean -= 15
+        for k in range(10):
+            lazer(k,WOOL,5)
         lazer(note(Nnote),GLOWSTONE,5)
         WAIT(tinyNote)
         tweeters((SSANDSTONE))
@@ -1183,6 +1087,8 @@ for k in range(2):
         print(j)
         lazer(note(Nnote),WOOL,5)
         Nnote += 1 
+    for k in range(10):
+            lazer(k,0,0)
     for j in range(8):
         i = 0
         print(j)
