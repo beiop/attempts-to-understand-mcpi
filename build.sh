@@ -29,6 +29,11 @@ build() {
 #build chat-commands
 #build expanded-creative
 #build recipes
-build cake
-build doubleStoneSlab
-build edibleStoneSlab
+
+#build mcpi-block-shenanigans-1.0
+
+#build cake
+#build doubleStoneSlab
+#build edibleStoneSlab
+
+#build creativenight

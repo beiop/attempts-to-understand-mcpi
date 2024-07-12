@@ -18,8 +18,8 @@ input("pos one recoreded, press entre when at pos 2")
 playerTilePos2 = mc.player.getTilePos()
 
 #find the line of y=mx+b
-y_slope = (playerTilePos1.y - playerTilePos2.y) / (playerTilePos1.x - playerTilePos2.x)
-y_b = playerTilePos1.y - (playerTilePos1.x * y_slope)
+y_slope = ((playerTilePos1.y - 1) - (playerTilePos2.y - 1)) / (playerTilePos1.x - playerTilePos2.x)
+y_b = (playerTilePos1.y - 1) - (playerTilePos1.x * y_slope)
 
 #find the line of z=mx+b
 z_slope = (playerTilePos1.z - playerTilePos2.z) / (playerTilePos1.x - playerTilePos2.x)
