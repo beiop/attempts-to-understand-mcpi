@@ -1,3 +1,5 @@
+# This repo has been archived in favour of https://github.com/beiop/attempts-to-understand-mcpi-again
+
 # beiop/attempts-to-understand-mcpi
 
 Time to prove whether or not average joe can mod mcpi
